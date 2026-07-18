@@ -1,4 +1,0 @@
-.env
-instruments_cache.csv
-__pycache__/
-*.pyc
