@@ -18,7 +18,7 @@ from github_logger import load_notified_log, already_notified, append_notificati
 
 def load_watchlist():
     with open(config.WATCHLIST_FILE, "r") as f:
-        symbols = [line.strip().upper() for line in f if line.strip()]
+        symbols = [line.strip().upper().replace(".NS", "") for line in f if line.strip()]
     return symbols
 
 
