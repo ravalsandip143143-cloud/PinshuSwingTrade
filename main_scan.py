@@ -39,7 +39,7 @@ def main():
             continue
 
         try:
-            hourly_df = fetch_hourly_candles(smart_api, token, days_back=90)
+            hourly_df = fetch_hourly_candles(smart_api, token, days_back=200)
             if hourly_df is None or hourly_df.empty:
                 print(f"{symbol}: data nahi mila")
                 time.sleep(config.SCAN_DELAY_SECONDS)
